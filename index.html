@@ -1,0 +1,42 @@
+<style>
+  button{
+    border: 2px solid black;
+    background-color: lightgreen;
+    padding: 20px;
+  }
+
+</style>
+<body>
+
+<button> click me</button>
+<audio id="bell" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/DoorBell_006.ogv"></audio>
+
+<script src="https://cdn.jsdelivr.net/gh/netizenorg/netnet-standard-library/build/nn.min.js"></script>
+<script>
+  
+//javascript written here
+//programming language-not a markup or styling language
+//wikimedia
+//single or double quotes around string
+//numbers, strings, and booleans
+//array:called list in other languages ;object: swiss army knife--can include multiple things (swiss.knife/swiss.screwdriver)
+//apis (document gives lots of info, bluetooth, photoshop type beat, javascript to control sheets etc.)
+//script last thing in body, make sure browser gets to html and css first
+//functions:like mini programs
+  //global= nn
+  function bgChange () {
+    nn.get("button").style.backgroundColor = nn.randomColor()
+    nn.get("#bell").play()
+    nn.get("#bell").currentTime = 0
+  }
+ //variable decleartion: const(can't change) and let(var can change)... var works, but don't use it
+ nn.get("button").on("click", bgChange)
+ 
+ //event based programming-fucntions to diff events
+ 
+
+  
+
+
+</script>
+</body>
